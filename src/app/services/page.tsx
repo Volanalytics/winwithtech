@@ -1,5 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services - Web Development, Cloud Solutions & Digital Marketing | WinWithTech",
+  description: "Comprehensive technology solutions including web development, cloud services, customer experience platforms, and digital marketing services for modern businesses.",
+};
 
 export default function ServicesPage() {
   return (
