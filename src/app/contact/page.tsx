@@ -1,5 +1,12 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { ContactFormIcon, ContactInfoIcon, QuickResponseIcon, SocialIcon, FAQIcon, TimeIcon, SecurityIcon } from "@/components/icons/ContactIcons"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Us | WinWithTech",
+  description: "Get in touch with our Genesys Cloud CX experts. Transform your customer experience with enterprise-grade solutions tailored for SMBs.",
+}
 
 export default function ContactPage() {
   return (
@@ -20,7 +27,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <Card className="p-8">
-              <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+              <div className="flex flex-col items-center text-center mb-8">
+                <ContactFormIcon />
+                <h2 className="text-2xl font-bold">Get in Touch</h2>
+              </div>
               <form className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -70,7 +80,10 @@ export default function ContactPage() {
 
             <div className="space-y-8">
               <Card className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <ContactInfoIcon />
+                <h3 className="text-xl font-semibold">Contact Information</h3>
+              </div>
                 <div className="space-y-4 text-gray-600">
                   <p>
                     <strong className="block">Email:</strong>
@@ -88,7 +101,10 @@ export default function ContactPage() {
               </Card>
 
               <Card className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Quick Response</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <QuickResponseIcon />
+                <h3 className="text-xl font-semibold">Quick Response</h3>
+              </div>
                 <p className="text-gray-600 mb-4">
                   We typically respond to inquiries within 24 hours. For immediate 
                   assistance, our support team is available 24/7 for existing clients.
@@ -96,7 +112,10 @@ export default function ContactPage() {
               </Card>
 
               <Card className="p-8">
-                <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <SocialIcon />
+                <h3 className="text-xl font-semibold">Connect With Us</h3>
+              </div>
                 <div className="flex space-x-4">
                   <a
                     href="#"
@@ -120,14 +139,20 @@ export default function ContactPage() {
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Frequently Asked Questions
-          </h2>
+          <div className="text-center mb-12">
+            <FAQIcon />
+            <h2 className="text-3xl font-bold">
+              Frequently Asked Questions
+            </h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-3">
-                How quickly can we get started?
-              </h3>
+              <div className="flex items-center gap-3 mb-3">
+                <TimeIcon />
+                <h3 className="text-xl font-semibold">
+                  How quickly can we get started?
+                </h3>
+              </div>
               <p className="text-gray-600">
                 We can typically begin implementation within 1-2 weeks of contract 
                 signing, with most projects completed within 4-8 weeks.
@@ -152,9 +177,12 @@ export default function ContactPage() {
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-3">
-                What about data security?
-              </h3>
+              <div className="flex items-center gap-3 mb-3">
+                <SecurityIcon />
+                <h3 className="text-xl font-semibold">
+                  What about data security?
+                </h3>
+              </div>
               <p className="text-gray-600">
                 We maintain the highest security standards with SOC 2 compliance and 
                 end-to-end encryption.
