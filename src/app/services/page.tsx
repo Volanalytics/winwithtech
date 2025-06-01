@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import { WebDevIcon } from "@/components/icons/WebDevIcon";
+import { CloudIcon } from "@/components/icons/CloudIcon";
+import { CXIcon } from "@/components/icons/CXIcon";
+import { MarketingIcon } from "@/components/icons/MarketingIcon";
+import { InfrastructureIcon } from "@/components/icons/InfrastructureIcon";
+import { CloudPartnerIcon, DevToolsIcon, CXPartnerIcon } from "@/components/icons/PartnerIcons";
+import { SuccessIcon } from "@/components/icons/SuccessIcon";
 
 export const metadata: Metadata = {
   title: "Services - Web Development, Cloud Solutions & Digital Marketing | WinWithTech",
@@ -26,7 +33,8 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Core Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <WebDevIcon />
               <h3 className="text-2xl font-semibold mb-4">Web Development</h3>
               <p className="text-gray-600 mb-4">
                 Custom websites and web applications built with modern technologies and best practices.
@@ -38,7 +46,8 @@ export default function ServicesPage() {
                 <li>Custom web applications</li>
               </ul>
             </Card>
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <CloudIcon />
               <h3 className="text-2xl font-semibold mb-4">Cloud Solutions</h3>
               <p className="text-gray-600 mb-4">
                 Enterprise-grade cloud infrastructure and services across major providers.
@@ -50,7 +59,8 @@ export default function ServicesPage() {
                 <li>Cloud migration services</li>
               </ul>
             </Card>
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <CXIcon />
               <h3 className="text-2xl font-semibold mb-4">Customer Experience</h3>
               <p className="text-gray-600 mb-4">
                 End-to-end CX solutions powered by Genesys Cloud and custom integrations.
@@ -62,7 +72,8 @@ export default function ServicesPage() {
                 <li>CX strategy consulting</li>
               </ul>
             </Card>
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <MarketingIcon />
               <h3 className="text-2xl font-semibold mb-4">Digital Marketing & SEO</h3>
               <p className="text-gray-600 mb-4">
                 Comprehensive digital marketing solutions to increase your online presence.
@@ -74,7 +85,8 @@ export default function ServicesPage() {
                 <li>Performance optimization</li>
               </ul>
             </Card>
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <InfrastructureIcon />
               <h3 className="text-2xl font-semibold mb-4">IT Infrastructure</h3>
               <p className="text-gray-600 mb-4">
                 Complete IT hardware and network infrastructure solutions for modern businesses.
@@ -95,21 +107,24 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Technology Partners</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <CloudPartnerIcon />
               <h3 className="text-xl font-semibold mb-4">Cloud Infrastructure</h3>
               <p className="text-gray-600">
                 Leverage industry-leading cloud platforms including AWS, Google Cloud, and Microsoft Azure
                 for scalable, reliable infrastructure.
               </p>
             </Card>
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <DevToolsIcon />
               <h3 className="text-xl font-semibold mb-4">Development Tools</h3>
               <p className="text-gray-600">
                 Modern development stack with GitHub, Supabase, and Render for efficient,
                 secure application deployment.
               </p>
             </Card>
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <CXPartnerIcon />
               <h3 className="text-xl font-semibold mb-4">CX Platforms</h3>
               <p className="text-gray-600">
                 Certified partnership with Genesys Cloud CX for enterprise-grade
@@ -126,6 +141,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Success Stories</h2>
             <Card className="p-8 mb-8">
+              <SuccessIcon />
               <h3 className="text-xl font-semibold mb-4">Digital Transformation</h3>
               <p className="text-gray-600 mb-6">
                 We helped a mid-sized business modernize their entire digital presence with
