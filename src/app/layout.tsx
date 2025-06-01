@@ -11,6 +11,16 @@ export const metadata: Metadata = {
   title: "WinWithTech - Genesys Cloud CX Solutions",
   description: "Empowering SMBs with next-generation customer experience solutions through Genesys Cloud CX.",
   metadataBase: new URL(baseUrl),
+  icons: {
+    icon: [
+      { url: '/favicon.svg' },
+      { url: '/favicon.ico' },
+    ],
+    apple: [
+      { url: '/favicon.svg' },
+    ],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
