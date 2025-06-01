@@ -24,11 +24,17 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
-
-      - name: Create .nojekyll file
-        run: touch out/.nojekyll
-
+        run: |
+          npm run build
+          touch out/.nojekyll
+          
+      - name: Fix permissions
+        run: |
+          chmod -R +rw out
+          
+      - name: List output directory
+        run: ls -la out/
+          
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

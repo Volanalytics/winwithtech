@@ -5,13 +5,6 @@ const nextConfig = {
   trailingSlash: true, // Add trailing slashes to all URLs
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-        pathname: '/photos/**',
-      },
-    ],
   },
 }
 
