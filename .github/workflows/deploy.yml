@@ -40,6 +40,9 @@ jobs:
           NODE_ENV: production
         run: npm run build
 
+      - name: Create CNAME file
+        run: echo "winwithtech.com" > ./out/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
