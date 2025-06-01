@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -73,27 +74,27 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Discover how we can transform your customer experience with Genesys Cloud CX.
               </p>
-              <a href="/services" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link href="/services" className="text-blue-600 hover:text-blue-700 font-medium">
                 Learn More →
-              </a>
+              </Link>
             </Card>
             <Card className="p-6">
               <h3 className="text-xl font-semibold mb-4">Why Genesys Cloud?</h3>
               <p className="text-gray-600 mb-4">
                 See why leading SMBs choose Genesys Cloud CX for their customer experience.
               </p>
-              <a href="/why-genesys" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link href="/why-genesys" className="text-blue-600 hover:text-blue-700 font-medium">
                 Explore Benefits →
-              </a>
+              </Link>
             </Card>
             <Card className="p-6">
               <h3 className="text-xl font-semibold mb-4">Get Started</h3>
               <p className="text-gray-600 mb-4">
                 Ready to elevate your customer experience? Contact us for a consultation.
               </p>
-              <a href="/contact" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link href="/contact" className="text-blue-600 hover:text-blue-700 font-medium">
                 Contact Us →
-              </a>
+              </Link>
             </Card>
           </div>
         </div>

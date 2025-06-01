@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,14 +20,14 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-white`}>
         <header className="border-b">
           <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="font-bold text-xl">WinWithTech</div>
+            <Link href="/" className="font-bold text-xl">WinWithTech</Link>
             <div className="hidden md:flex space-x-6">
-              <a href="/" className="hover:text-blue-600">Home</a>
-              <a href="/about" className="hover:text-blue-600">About</a>
-              <a href="/services" className="hover:text-blue-600">Services</a>
-              <a href="/why-genesys" className="hover:text-blue-600">Why Genesys</a>
-              <a href="/blog" className="hover:text-blue-600">Blog</a>
-              <a href="/contact" className="hover:text-blue-600">Contact</a>
+              <Link href="/" className="hover:text-blue-600">Home</Link>
+              <Link href="/about" className="hover:text-blue-600">About</Link>
+              <Link href="/services" className="hover:text-blue-600">Services</Link>
+              <Link href="/why-genesys" className="hover:text-blue-600">Why Genesys</Link>
+              <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+              <Link href="/contact" className="hover:text-blue-600">Contact</Link>
             </div>
           </nav>
         </header>

@@ -1,4 +1,6 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function WhyGenesysPage() {
   return (
@@ -6,9 +8,9 @@ export default function WhyGenesysPage() {
       {/* Hero Section */}
       <section className="bg-gray-900 text-white py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Why Genesys Cloud CX?</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Genesys Cloud CX?</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
-            Discover why thousands of SMBs trust Genesys Cloud CX to deliver exceptional 
+            Discover why leading SMBs trust Genesys Cloud CX to deliver exceptional 
             customer experiences and drive business growth.
           </p>
         </div>
@@ -18,120 +20,119 @@ export default function WhyGenesysPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Key Benefits</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">AI-Powered Orchestration</h3>
-              <p className="text-gray-600 mb-4">
-                Leverage cutting-edge artificial intelligence to:
-              </p>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>Predict customer needs and intent</li>
-                <li>Automate routine interactions</li>
-                <li>Provide real-time agent assistance</li>
-                <li>Optimize customer routing</li>
-              </ul>
-            </Card>
-            <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">Scalable Architecture</h3>
-              <p className="text-gray-600 mb-4">
-                Built for growth with:
-              </p>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>Auto-scaling capabilities</li>
-                <li>Pay-as-you-grow pricing</li>
-                <li>Flexible deployment options</li>
-                <li>Global availability</li>
-              </ul>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* SMB Advantages */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">SMB-Specific Advantages</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Simplified IT</h3>
-              <p className="text-gray-600">
-                Cloud-based solution eliminates the need for complex on-premises infrastructure, 
-                reducing IT overhead and maintenance costs.
+              <h3 className="text-xl font-semibold mb-4">All-in-One Solution</h3>
+              <p className="text-gray-600 mb-4">
+                Unified platform for voice, digital channels, workforce engagement, 
+                and AI-powered analytics.
               </p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Omnichannel capabilities</li>
+                <li>• Integrated workforce management</li>
+                <li>• Built-in analytics</li>
+                <li>• AI-powered automation</li>
+              </ul>
             </Card>
+
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Rapid Deployment</h3>
-              <p className="text-gray-600">
-                Get up and running quickly with intuitive interfaces and pre-built 
-                integrations with popular business tools.
+              <h3 className="text-xl font-semibold mb-4">Cloud-Native Flexibility</h3>
+              <p className="text-gray-600 mb-4">
+                Scale your operations effortlessly with cloud-based architecture 
+                designed for growth.
               </p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• Rapid deployment</li>
+                <li>• Automatic updates</li>
+                <li>• Elastic scalability</li>
+                <li>• Pay-as-you-grow model</li>
+              </ul>
             </Card>
+
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Enhanced Employee Experience</h3>
-              <p className="text-gray-600">
-                Empower your team with AI-assisted tools and unified workspaces that 
-                boost productivity and satisfaction.
+              <h3 className="text-xl font-semibold mb-4">Enterprise Security</h3>
+              <p className="text-gray-600 mb-4">
+                Industry-leading security and compliance features to protect your 
+                business and customer data.
               </p>
+              <ul className="text-gray-600 space-y-2">
+                <li>• SOC 2 compliance</li>
+                <li>• End-to-end encryption</li>
+                <li>• Role-based access</li>
+                <li>• Regular security updates</li>
+              </ul>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Platform Comparison */}
-      <section className="py-16">
+      {/* ROI Metrics */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Platform Comparison</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border p-4 text-left">Features</th>
-                  <th className="border p-4 text-left">Legacy Systems</th>
-                  <th className="border p-4 text-left">Genesys Cloud CX</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border p-4">Deployment Time</td>
-                  <td className="border p-4">Months</td>
-                  <td className="border p-4 font-medium text-blue-600">Days to Weeks</td>
-                </tr>
-                <tr>
-                  <td className="border p-4">Infrastructure Required</td>
-                  <td className="border p-4">Heavy on-premises</td>
-                  <td className="border p-4 font-medium text-blue-600">Cloud-based</td>
-                </tr>
-                <tr>
-                  <td className="border p-4">Scalability</td>
-                  <td className="border p-4">Limited, hardware-dependent</td>
-                  <td className="border p-4 font-medium text-blue-600">Unlimited, on-demand</td>
-                </tr>
-                <tr>
-                  <td className="border p-4">AI Capabilities</td>
-                  <td className="border p-4">Basic or none</td>
-                  <td className="border p-4 font-medium text-blue-600">Advanced, built-in</td>
-                </tr>
-              </tbody>
-            </table>
+          <h2 className="text-3xl font-bold text-center mb-12">Proven Results</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="p-8">
+              <h3 className="text-2xl font-semibold mb-6">Customer Success Metrics</h3>
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <p className="text-3xl font-bold text-blue-600">60%</p>
+                  <p className="text-gray-600">Increase in Agent Productivity</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-blue-600">92%</p>
+                  <p className="text-gray-600">Service Level Achievement</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-blue-600">45%</p>
+                  <p className="text-gray-600">Cost Reduction</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-blue-600">85%</p>
+                  <p className="text-gray-600">First Contact Resolution</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8">
+              <h3 className="text-2xl font-semibold mb-6">Industry Recognition</h3>
+              <ul className="space-y-4 text-gray-600">
+                <li className="flex items-start">
+                  <span className="font-medium mr-2">✓</span>
+                  <span>Gartner Magic Quadrant Leader</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium mr-2">✓</span>
+                  <span>Forrester Wave™ Leader</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium mr-2">✓</span>
+                  <span>G2 Leader in CCaaS</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium mr-2">✓</span>
+                  <span>TrustRadius Top Rated</span>
+                </li>
+              </ul>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Industry Recognition */}
-      <section className="py-16 bg-blue-50">
+      {/* Call to Action */}
+      <section className="py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">Industry Recognition</h2>
-          <Card className="p-8 max-w-3xl mx-auto">
-            <p className="text-xl mb-6">
-              "Recognized as a Leader in the 2024 Gartner Magic Quadrant for Contact 
-              Center as a Service"
-            </p>
-            <p className="text-gray-600">
-              Trusted by over 8,000 organizations across 100+ countries
-            </p>
-          </Card>
+          <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            Let us help you transform your customer experience with Genesys Cloud CX. 
+            Schedule a demo today and see the difference for yourself.
+          </p>
+          <Link href="/contact">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              Schedule a Demo
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
-  );
+  )
 }
