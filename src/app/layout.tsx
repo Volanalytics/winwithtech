@@ -5,10 +5,15 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const isProd = process.env.NODE_ENV === 'production';
+const baseUrl = isProd 
+  ? 'https://volanalytics.github.io/winwithtech'
+  : 'http://localhost:8000';
+
 export const metadata: Metadata = {
   title: "WinWithTech - Genesys Cloud CX Solutions",
   description: "Empowering SMBs with next-generation customer experience solutions through Genesys Cloud CX.",
-  metadataBase: new URL('https://volanalytics.github.io/winwithtech'),
+  metadataBase: new URL(baseUrl),
 };
 
 export default function RootLayout({
