@@ -40,45 +40,39 @@ export function ContactForm() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormState({ isSubmitting: true, isSuccess: false, error: null });
+    
+    // Construct email body
+    const emailBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company}
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+Message:
+${formData.message}
+    `.trim();
 
-      const data = await response.json();
+    // Construct mailto URL
+    const mailtoUrl = `mailto:info@winwithtech.com?subject=Contact Form Submission from ${formData.name}&body=${encodeURIComponent(emailBody)}`;
 
-      if (!response.ok) {
-        throw new Error(data.error || "Failed to send message");
-      }
+    // Open default email client
+    window.location.href = mailtoUrl;
 
-      setFormState({
-        isSubmitting: false,
-        isSuccess: true,
-        error: null,
-      });
+    // Show success message
+    setFormState({
+      isSubmitting: false,
+      isSuccess: true,
+      error: null,
+    });
 
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        message: "",
-      });
-    } catch (error) {
-      setFormState({
-        isSubmitting: false,
-        isSuccess: false,
-        error: error instanceof Error ? error.message : "Something went wrong",
-      });
-    }
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      message: "",
+    });
   };
 
   return (
