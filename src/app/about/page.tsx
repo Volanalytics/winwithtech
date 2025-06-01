@@ -1,4 +1,11 @@
 import { Card } from "@/components/ui/card";
+import { StoryIcon, ImpactIcon, InnovationIcon, CustomerSuccessIcon, ExcellenceIcon, PartnershipIcon } from "@/components/icons/AboutIcons";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us - WinWithTech | Technology Solutions Partner",
+  description: "Learn about WinWithTech's 15+ years of experience in customer experience and technology consulting, empowering SMBs with next-gen solutions.",
+};
 
 export default function AboutPage() {
   return (
@@ -19,7 +26,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              <div className="flex flex-col items-center md:items-start">
+                <StoryIcon />
+                <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+              </div>
               <p className="text-gray-600 mb-4">
                 Founded with a vision to make enterprise-grade customer experience technology 
                 accessible to small and medium businesses, WinWithTech has grown to become 
@@ -31,7 +41,10 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Our Impact</h3>
+              <div className="flex justify-center mb-6">
+                <ImpactIcon />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-center">Our Impact</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div>
                   <p className="text-3xl font-bold text-blue-600">1000+</p>
@@ -60,21 +73,24 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Mission & Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <InnovationIcon />
               <h3 className="text-xl font-semibold mb-4">Innovation First</h3>
               <p className="text-gray-600">
                 We stay ahead of technology trends to bring you cutting-edge solutions 
                 that drive business growth.
               </p>
             </Card>
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <CustomerSuccessIcon />
               <h3 className="text-xl font-semibold mb-4">Customer Success</h3>
               <p className="text-gray-600">
                 Your success is our success. We're committed to delivering solutions 
                 that create real business value.
               </p>
             </Card>
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <ExcellenceIcon />
               <h3 className="text-xl font-semibold mb-4">Excellence</h3>
               <p className="text-gray-600">
                 We maintain the highest standards in our solutions, support, and 
@@ -89,6 +105,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
+            <PartnershipIcon />
             <h2 className="text-3xl font-bold mb-6">Genesys Cloud CX Partnership</h2>
             <p className="text-gray-600 mb-8">
               As a certified Genesys Cloud CX partner, we bring enterprise-grade 
