@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { SEO } from "@/components/SEO";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -8,19 +9,71 @@ const inter = Inter({ subsets: ["latin"] });
 const baseUrl = 'https://winwithtech.com';
 
 export const metadata: Metadata = {
-  title: "WinWithTech - Genesys Cloud CX Solutions",
-  description: "Empowering SMBs with next-generation customer experience solutions through Genesys Cloud CX.",
   metadataBase: new URL(baseUrl),
+  title: {
+    default: "WinWithTech - Genesys Cloud CX Solutions for SMBs",
+    template: "%s | WinWithTech"
+  },
+  description: "Transform your customer experience with WinWithTech's Genesys Cloud CX solutions. Offering cloud services, web development, digital marketing, and business reputation management for SMBs.",
+  keywords: [
+    "Genesys Cloud CX",
+    "Customer Experience Solutions",
+    "Cloud Services",
+    "Web Development",
+    "Digital Marketing",
+    "Business Reputation Management",
+    "SMB Solutions",
+    "CX Platform",
+    "Cloud Implementation",
+    "IT Infrastructure"
+  ],
+  authors: [{ name: "WinWithTech" }],
+  creator: "WinWithTech",
+  publisher: "WinWithTech",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
-      { url: '/favicon.svg' },
-      { url: '/favicon.ico' },
+      { url: "/favicon.svg" },
+      { url: "/favicon.ico" },
     ],
     apple: [
-      { url: '/favicon.svg' },
+      { url: "/favicon.svg" },
     ],
   },
-  manifest: '/site.webmanifest',
+  manifest: "/site.webmanifest",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    title: "WinWithTech - Genesys Cloud CX Solutions for SMBs",
+    description: "Transform your customer experience with WinWithTech's Genesys Cloud CX solutions. Expert implementation and support for small and medium businesses.",
+    siteName: "WinWithTech"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WinWithTech - Genesys Cloud CX Solutions",
+    description: "Transform your customer experience with WinWithTech's Genesys Cloud CX solutions.",
+    creator: "@winwithtech",
+    site: "@winwithtech"
+  },
+  alternates: {
+    canonical: baseUrl
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -30,6 +83,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <SEO />
+      </head>
       <body className={`${inter.className} min-h-screen bg-white`}>
         <header className="border-b">
           <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -57,6 +113,7 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-bold mb-4">Contact</h3>
                 <p className="text-gray-300">Email: contact@winwithtech.com</p>
+                <p className="text-gray-300">11205 Lebanon Rd, #79<br />Mt Juliet, TN 37122</p>
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-4">Follow Us</h3>
