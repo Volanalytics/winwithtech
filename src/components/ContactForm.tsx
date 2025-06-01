@@ -7,19 +7,15 @@ export function ContactForm() {
 
   return (
     <form 
-      action="https://formsubmit.io/send/info@winwithtech.com" 
+      action="https://formsubmit.co/info@winwithtech.com" 
       method="POST"
       className="space-y-6"
     >
-      {/* This prevents spam */}
-      <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
-
-      {/* Redirect after submission */}
-      <input 
-        type="hidden" 
-        name="_redirect" 
-        value="https://winwithtech.com/thank-you"
-      />
+      {/* FormSubmit.co configuration */}
+      <input type="text" name="_honey" style={{ display: "none" }} />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://winwithtech.com/thank-you" />
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
           Name
