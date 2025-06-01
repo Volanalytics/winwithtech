@@ -5,10 +5,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const isProd = process.env.NODE_ENV === 'production';
-const baseUrl = isProd 
-  ? 'https://volanalytics.github.io/winwithtech'
-  : 'http://localhost:8000';
+const baseUrl = 'https://winwithtech.com';
 
 export const metadata: Metadata = {
   title: "WinWithTech - Genesys Cloud CX Solutions",
