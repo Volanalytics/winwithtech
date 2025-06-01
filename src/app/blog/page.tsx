@@ -1,7 +1,24 @@
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
+import { NewsletterIcon, CategoryIcons } from "@/components/icons/BlogIcons"
+import type { Metadata } from "next"
 
-const blogPosts = [
+export const metadata: Metadata = {
+  title: "CX Insights Blog | WinWithTech",
+  description: "Expert insights, industry trends, and practical tips for delivering exceptional customer experiences with Genesys Cloud CX and modern technology.",
+}
+
+type Category = 'Technology' | 'Business' | 'Analytics' | 'Case Studies' | 'Culture' | 'Strategy';
+
+interface BlogPost {
+  title: string;
+  excerpt: string;
+  date: string;
+  category: Category;
+  readTime: string;
+}
+
+const blogPosts: BlogPost[] = [
   {
     title: "The Future of Customer Experience with AI",
     excerpt: "Explore how artificial intelligence is revolutionizing customer service and what it means for SMBs.",
@@ -68,7 +85,8 @@ export default function BlogPage() {
               <Card key={index} className="overflow-hidden">
                 <div className="p-6">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-sm text-blue-600 font-medium">
+                    <span className="text-sm text-blue-600 font-medium flex items-center gap-2">
+                      {CategoryIcons()[post.category]}
                       {post.category}
                     </span>
                     <span className="text-sm text-gray-500">
@@ -105,6 +123,7 @@ export default function BlogPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
+            <NewsletterIcon />
             <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
             <p className="text-gray-600 mb-8">
               Subscribe to our newsletter for the latest insights in customer experience, 
