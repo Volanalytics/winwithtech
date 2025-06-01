@@ -17,7 +17,7 @@ export function SEO() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "contact@winwithtech.com",
+      "email": "info@winwithtech.com",
       "availableLanguage": ["English"]
     },
     "sameAs": [

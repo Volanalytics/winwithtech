@@ -112,7 +112,7 @@ export default function RootLayout({
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-4">Contact</h3>
-                <p className="text-gray-300">Email: contact@winwithtech.com</p>
+                <p className="text-gray-300">Email: info@winwithtech.com</p>
                 <p className="text-gray-300">11205 Lebanon Rd, #79<br />Mt Juliet, TN 37122</p>
               </div>
               <div>
