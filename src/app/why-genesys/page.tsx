@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { UnifiedIcon, CloudFlexIcon, SecurityIcon, MetricsIcon, AwardsIcon, DemoIcon } from "@/components/icons/GenesysIcons"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Why Choose Genesys Cloud CX | WinWithTech",
+  description: "Discover why leading SMBs trust Genesys Cloud CX for exceptional customer experiences. Learn about key benefits, ROI metrics, and industry recognition.",
+}
 
 export default function WhyGenesysPage() {
   return (
@@ -21,7 +28,8 @@ export default function WhyGenesysPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Key Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <UnifiedIcon />
               <h3 className="text-xl font-semibold mb-4">All-in-One Solution</h3>
               <p className="text-gray-600 mb-4">
                 Unified platform for voice, digital channels, workforce engagement, 
@@ -35,7 +43,8 @@ export default function WhyGenesysPage() {
               </ul>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <CloudFlexIcon />
               <h3 className="text-xl font-semibold mb-4">Cloud-Native Flexibility</h3>
               <p className="text-gray-600 mb-4">
                 Scale your operations effortlessly with cloud-based architecture 
@@ -49,7 +58,8 @@ export default function WhyGenesysPage() {
               </ul>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 flex flex-col items-center text-center">
+              <SecurityIcon />
               <h3 className="text-xl font-semibold mb-4">Enterprise Security</h3>
               <p className="text-gray-600 mb-4">
                 Industry-leading security and compliance features to protect your 
@@ -71,7 +81,8 @@ export default function WhyGenesysPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Proven Results</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <MetricsIcon />
               <h3 className="text-2xl font-semibold mb-6">Customer Success Metrics</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div>
@@ -93,7 +104,8 @@ export default function WhyGenesysPage() {
               </div>
             </Card>
 
-            <Card className="p-8">
+            <Card className="p-8 flex flex-col items-center text-center">
+              <AwardsIcon />
               <h3 className="text-2xl font-semibold mb-6">Industry Recognition</h3>
               <ul className="space-y-4 text-gray-600">
                 <li className="flex items-start">
@@ -121,6 +133,7 @@ export default function WhyGenesysPage() {
       {/* Call to Action */}
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
+          <DemoIcon />
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Let us help you transform your customer experience with Genesys Cloud CX. 
