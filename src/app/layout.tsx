@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "WinWithTech - Genesys Cloud CX Solutions",
   description: "Empowering SMBs with next-generation customer experience solutions through Genesys Cloud CX.",
+  metadataBase: new URL('https://volanalytics.github.io/winwithtech'),
 };
 
 export default function RootLayout({
