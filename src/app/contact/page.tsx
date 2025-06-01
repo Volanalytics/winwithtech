@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ContactFormIcon, ContactInfoIcon, QuickResponseIcon, SocialIcon, FAQIcon, TimeIcon, SecurityIcon } from "@/components/icons/ContactIcons"
+import { MapIcon } from "@/components/icons/MapIcon"
 import { ContactForm } from "@/components/ContactForm"
 import type { Metadata } from "next"
 
@@ -49,6 +50,15 @@ export default function ContactPage() {
                   <p>
                     <strong className="block">Support:</strong>
                     support@winwithtech.com
+                  </p>
+                  <p>
+                    <strong className="block">Address:</strong>
+                    <span className="flex items-center gap-2">
+                      <MapIcon />
+                      11205 Lebanon Rd, #79
+                      <br />
+                      Mt Juliet, TN 37122
+                    </span>
                   </p>
                   <p>
                     <strong className="block">Hours:</strong>
