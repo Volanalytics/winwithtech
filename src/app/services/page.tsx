@@ -25,7 +25,7 @@ export default function ServicesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Core Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-8">
               <h3 className="text-2xl font-semibold mb-4">Web Development</h3>
               <p className="text-gray-600 mb-4">
@@ -72,6 +72,18 @@ export default function ServicesPage() {
                 <li>Content strategy</li>
                 <li>Analytics and reporting</li>
                 <li>Performance optimization</li>
+              </ul>
+            </Card>
+            <Card className="p-8">
+              <h3 className="text-2xl font-semibold mb-4">IT Infrastructure</h3>
+              <p className="text-gray-600 mb-4">
+                Complete IT hardware and network infrastructure solutions for modern businesses.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 mb-4">
+                <li>Network equipment configuration</li>
+                <li>Point-of-Sale systems</li>
+                <li>Fiber and copper cabling</li>
+                <li>Network infrastructure design</li>
               </ul>
             </Card>
           </div>
