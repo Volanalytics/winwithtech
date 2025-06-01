@@ -9,118 +9,115 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
-            Comprehensive Genesys Cloud CX solutions tailored for small and medium businesses.
-            From implementation to optimization, we're with you every step of the way.
+            Comprehensive technology solutions for modern businesses. From cloud services and web development
+            to customer experience platforms, we deliver cutting-edge solutions that drive growth.
           </p>
         </div>
       </section>
 
-      {/* Consultative Services */}
+      {/* Core Services */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Consultative Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Core Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">Needs Assessment</h3>
+              <h3 className="text-2xl font-semibold mb-4">Web Development</h3>
               <p className="text-gray-600 mb-4">
-                We conduct thorough evaluations to align Genesys Cloud CX with your unique 
-                business goals and customer experience objectives.
+                Custom websites and web applications built with modern technologies and best practices.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>Business process analysis</li>
-                <li>Customer journey mapping</li>
-                <li>Technology stack evaluation</li>
-                <li>ROI projection</li>
+                <li>Responsive website design</li>
+                <li>Progressive Web Apps (PWA)</li>
+                <li>E-commerce solutions</li>
+                <li>Custom web applications</li>
               </ul>
             </Card>
             <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">Implementation</h3>
+              <h3 className="text-2xl font-semibold mb-4">Cloud Solutions</h3>
               <p className="text-gray-600 mb-4">
-                Seamless setup and integration of Genesys Cloud CX with your existing 
-                systems and workflows.
+                Enterprise-grade cloud infrastructure and services across major providers.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>System integration</li>
-                <li>Data migration</li>
-                <li>Custom workflow setup</li>
-                <li>Security configuration</li>
+                <li>AWS cloud architecture</li>
+                <li>Google Cloud Platform solutions</li>
+                <li>Microsoft Azure integration</li>
+                <li>Cloud migration services</li>
               </ul>
             </Card>
             <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">Customization & Training</h3>
+              <h3 className="text-2xl font-semibold mb-4">Customer Experience</h3>
               <p className="text-gray-600 mb-4">
-                Tailored solutions and comprehensive training to ensure maximum adoption 
-                and effectiveness.
+                End-to-end CX solutions powered by Genesys Cloud and custom integrations.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>Custom workflow development</li>
-                <li>User interface personalization</li>
-                <li>Staff training programs</li>
-                <li>Best practices documentation</li>
+                <li>Genesys Cloud CX implementation</li>
+                <li>Omnichannel engagement</li>
+                <li>AI-powered automation</li>
+                <li>CX strategy consulting</li>
               </ul>
             </Card>
             <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">Ongoing Support</h3>
+              <h3 className="text-2xl font-semibold mb-4">Digital Marketing & SEO</h3>
               <p className="text-gray-600 mb-4">
-                24/7 expert support and continuous optimization to ensure your success.
+                Comprehensive digital marketing solutions to increase your online presence.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-4">
-                <li>24/7 technical support</li>
-                <li>Performance monitoring</li>
-                <li>Regular system updates</li>
-                <li>Optimization recommendations</li>
+                <li>Search Engine Optimization (SEO)</li>
+                <li>Content strategy</li>
+                <li>Analytics and reporting</li>
+                <li>Performance optimization</li>
               </ul>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Features */}
+      {/* Technology Partners */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Genesys Cloud CX Features</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Technology Partners</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Omnichannel Engagement</h3>
+              <h3 className="text-xl font-semibold mb-4">Cloud Infrastructure</h3>
               <p className="text-gray-600">
-                Unify customer interactions across voice, email, chat, and social media 
-                channels for seamless communication.
+                Leverage industry-leading cloud platforms including AWS, Google Cloud, and Microsoft Azure
+                for scalable, reliable infrastructure.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">AI-Powered Insights</h3>
+              <h3 className="text-xl font-semibold mb-4">Development Tools</h3>
               <p className="text-gray-600">
-                Leverage native AI to predict customer needs, identify trends, and 
-                optimize service delivery.
+                Modern development stack with GitHub, Supabase, and Render for efficient,
+                secure application deployment.
               </p>
             </Card>
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Advanced Security</h3>
+              <h3 className="text-xl font-semibold mb-4">CX Platforms</h3>
               <p className="text-gray-600">
-                Enterprise-grade security with TLS and AES-256 encryption to protect 
-                your customer data.
+                Certified partnership with Genesys Cloud CX for enterprise-grade
+                customer experience solutions.
               </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Case Study */}
+      {/* Success Stories */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Success Story</h2>
+            <h2 className="text-3xl font-bold mb-6">Success Stories</h2>
             <Card className="p-8 mb-8">
-              <h3 className="text-xl font-semibold mb-4">Retail SMB Transformation</h3>
+              <h3 className="text-xl font-semibold mb-4">Digital Transformation</h3>
               <p className="text-gray-600 mb-6">
-                A retail business increased their Trustpilot score from 2.1 to 4.6 after 
-                implementing Genesys Cloud CX with our guidance. Customer satisfaction 
-                improved by 118% within the first three months.
+                We helped a mid-sized business modernize their entire digital presence with
+                a new cloud-native web application, improved SEO, and integrated CX solution,
+                resulting in 200% increase in online engagement and 45% reduction in operational costs.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
-                  <p className="text-3xl font-bold text-blue-600">119%</p>
-                  <p className="text-gray-600">CSAT Improvement</p>
+                  <p className="text-3xl font-bold text-blue-600">200%</p>
+                  <p className="text-gray-600">Engagement Increase</p>
                 </div>
                 <div>
                   <p className="text-3xl font-bold text-blue-600">45%</p>
@@ -129,7 +126,7 @@ export default function ServicesPage() {
               </div>
             </Card>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Get Your Custom CX Plan
+              Start Your Digital Journey
             </Button>
           </div>
         </div>
