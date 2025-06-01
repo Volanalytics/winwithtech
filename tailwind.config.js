@@ -6,7 +6,16 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#3B82F6',
+        'primary-dark': '#2563EB',
+        'secondary': '#10B981',
+        'secondary-dark': '#059669',
+        'accent': '#8B5CF6',
+        'accent-dark': '#6D28D9',
+      },
+    },
   },
   plugins: [],
 }
