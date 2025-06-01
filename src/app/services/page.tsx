@@ -8,6 +8,7 @@ import { MarketingIcon } from "@/components/icons/MarketingIcon";
 import { InfrastructureIcon } from "@/components/icons/InfrastructureIcon";
 import { CloudPartnerIcon, DevToolsIcon, CXPartnerIcon } from "@/components/icons/PartnerIcons";
 import { SuccessIcon } from "@/components/icons/SuccessIcon";
+import { ReputationIcon } from "@/components/icons/ReputationIcon";
 
 export const metadata: Metadata = {
   title: "Services - Web Development, Cloud Solutions & Digital Marketing | WinWithTech",
@@ -96,6 +97,19 @@ export default function ServicesPage() {
                 <li>Point-of-Sale systems</li>
                 <li>Fiber and copper cabling</li>
                 <li>Network infrastructure design</li>
+              </ul>
+            </Card>
+            <Card className="p-8 flex flex-col items-center text-center">
+              <ReputationIcon />
+              <h3 className="text-2xl font-semibold mb-4">Business Reputation Management</h3>
+              <p className="text-gray-600 mb-4">
+                Advanced AI-powered brand monitoring and reputation management across all media channels.
+              </p>
+              <ul className="list-disc list-inside text-gray-600 mb-4">
+                <li>Real-time social media monitoring</li>
+                <li>Legacy media source tracking</li>
+                <li>Customer sentiment analysis</li>
+                <li>Collaboration tools for engagement</li>
               </ul>
             </Card>
           </div>
