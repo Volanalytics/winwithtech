@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "PORT=8000 next dev",
-    "build": "next build && touch out/.nojekyll",
+    "build": "next build && touch out/.nojekyll && cp out/index.html out/404.html",
     "start": "next start",
     "lint": "next lint"
   },
