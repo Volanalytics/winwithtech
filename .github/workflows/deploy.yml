@@ -35,7 +35,10 @@ jobs:
       - name: Build
         env:
           NODE_ENV: production
-        run: npm run build
+          NEXT_PUBLIC_BASE_URL: https://winwithtech.com
+        run: |
+          npm run build
+          cp -r .next/static out/_next/static || true
 
       - name: Create CNAME file
         run: echo "winwithtech.com" > ./out/CNAME
