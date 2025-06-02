@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { StoryIcon, ImpactIcon, InnovationIcon, CustomerSuccessIcon, ExcellenceIcon, PartnershipIcon } from "@/components/icons/AboutIcons";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,16 +11,10 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About WinWithTech</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            With over 15 years of experience in customer experience and technology consulting, 
-            we empower SMBs to embrace next-gen solutions while minimizing technical debt.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="About WinWithTech"
+        description="With over 15 years of experience in customer experience and technology consulting, we empower SMBs to embrace next-gen solutions while minimizing technical debt."
+      />
 
       {/* Our Story */}
       <section className="py-16">

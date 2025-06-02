@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { UnifiedIcon, CloudFlexIcon, SecurityIcon, MetricsIcon, AwardsIcon, DemoIcon } from "@/components/icons/GenesysIcons"
+import { PageHero } from "@/components/PageHero"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -12,16 +13,10 @@ export const metadata: Metadata = {
 export default function WhyGenesysPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Genesys Cloud CX?</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            Discover why leading SMBs trust Genesys Cloud CX to deliver exceptional 
-            customer experiences and drive business growth.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Why Choose Genesys Cloud CX?"
+        description="Discover why leading SMBs trust Genesys Cloud CX to deliver exceptional customer experiences and drive business growth."
+      />
 
       {/* Key Benefits */}
       <section className="py-16">

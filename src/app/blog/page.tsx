@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import { NewsletterIcon, CategoryIcons } from "@/components/icons/BlogIcons"
+import { PageHero } from "@/components/PageHero"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -66,16 +67,10 @@ const blogPosts: BlogPost[] = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">CX Insights Blog</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            Expert insights, industry trends, and practical tips to help you deliver 
-            exceptional customer experiences.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="CX Insights Blog"
+        description="Expert insights, industry trends, and practical tips to help you deliver exceptional customer experiences."
+      />
 
       {/* Featured Posts */}
       <section className="py-16">

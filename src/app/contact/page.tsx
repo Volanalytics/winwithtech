@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { ContactFormIcon, ContactInfoIcon, QuickResponseIcon, SocialIcon, FAQIcon, TimeIcon, SecurityIcon } from "@/components/icons/ContactIcons"
 import { MapIcon } from "@/components/icons/MapIcon"
 import { ContactForm } from "@/components/ContactForm"
+import { PageHero } from "@/components/PageHero"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -13,16 +14,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            Ready to transform your customer experience? Get in touch with our team 
-            of Genesys Cloud CX experts.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Contact Us"
+        description="Ready to transform your customer experience? Get in touch with our team of Genesys Cloud CX experts."
+      />
 
       {/* Contact Form */}
       <section className="py-16">

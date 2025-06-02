@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { WebDevIcon } from "@/components/icons/WebDevIcon";
 import { CloudIcon } from "@/components/icons/CloudIcon";
@@ -18,16 +19,10 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            Comprehensive technology solutions for modern businesses. From cloud services and web development
-            to customer experience platforms, we deliver cutting-edge solutions that drive growth.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Our Services"
+        description="Comprehensive technology solutions for modern businesses. From cloud services and web development to customer experience platforms, we deliver cutting-edge solutions that drive growth."
+      />
 
       {/* Core Services */}
       <section className="py-16">
