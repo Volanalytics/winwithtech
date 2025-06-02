@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { SEO } from "@/components/SEO";
+import { Logo } from "@/components/Logo";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -83,9 +83,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <SEO />
-      </head>
       <body className={`${inter.className} min-h-screen bg-white`}>
         <header className="border-b">
           <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
