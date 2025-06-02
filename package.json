@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "PORT=8000 next dev",
-    "build": "rm -rf .next out && next build && touch out/.nojekyll && cp out/index.html out/404.html && mkdir -p out/_next && cp -r .next/static out/_next/ || true",
+    "build": "rm -rf .next out && next build && touch out/.nojekyll && cp -r public/* out/ && cp out/index.html out/404.html",
     "start": "next start",
     "lint": "next lint",
     "deploy": "git add . && git commit -m 'Deploy updates' && git push origin main"

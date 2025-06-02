@@ -39,6 +39,8 @@ jobs:
         run: |
           npm run build
           touch out/.nojekyll
+          cp -r .next/static out/_next/static || true
+          cp -r public/* out/
 
       - name: Create CNAME file
         run: echo "winwithtech.com" > ./out/CNAME
