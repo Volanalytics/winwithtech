@@ -130,7 +130,14 @@ export default function BlogPage() {
               technology trends, and Genesys Cloud CX updates.
             </p>
             <Card className="p-8">
-              <form className="flex flex-col md:flex-row gap-4">
+              <form 
+                action="https://formsubmit.co/info@winwithtech.com" 
+                method="POST"
+                className="flex flex-col md:flex-row gap-4"
+              >
+                <input type="hidden" name="_subject" value="Newsletter Subscription" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://winwithtech.com/thank-you" />
                 <input
                   type="email"
                   placeholder="Enter your email"
