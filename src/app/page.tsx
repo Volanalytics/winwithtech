@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -10,13 +9,14 @@ import {
   WhyGenesysIcon,
   GetStartedIcon 
 } from "@/components/icons/HomeIcons";
+import { HeroVideo } from "@/components/HeroVideo";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center bg-gray-900 text-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent z-10" />
+      <section className="relative h-[70vh] flex items-center justify-center text-white overflow-hidden">
+        <HeroVideo />
         <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">

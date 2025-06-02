@@ -89,7 +89,9 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-white`}>
         <header className="border-b">
           <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <Link href="/" className="font-bold text-xl">WinWithTech</Link>
+            <Link href="/" className="flex items-center">
+              <Logo className="w-32 h-10" />
+            </Link>
             <div className="hidden md:flex space-x-6">
               <Link href="/" className="hover:text-blue-600">Home</Link>
               <Link href="/about" className="hover:text-blue-600">About</Link>
