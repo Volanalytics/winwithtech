@@ -38,7 +38,7 @@ jobs:
           NEXT_PUBLIC_BASE_URL: https://winwithtech.com
         run: |
           npm run build
-          cp -r .next/static out/_next/static || true
+          touch out/.nojekyll
 
       - name: Create CNAME file
         run: echo "winwithtech.com" > ./out/CNAME
