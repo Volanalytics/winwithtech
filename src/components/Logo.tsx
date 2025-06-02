@@ -12,19 +12,19 @@ export function Logo({ className = "w-40 h-12" }) {
         fill="#3B82F6"
       />
       
-      {/* WIN */}
+      {/* W */}
       <path
         d="M20 12l4 24h4l3-18 3 18h4l4-24h-4l-2.5 15-2.5-15h-4l-2.5 15-2.5-15h-4z"
         fill="white"
       />
       
-      {/* WITH */}
+      {/* W */}
       <path
-        d="M65 12v24h4V26h6v10h4V12h-4v10h-6V12h-4z"
+        d="M65 12l4 24h4l3-18 3 18h4l4-24h-4l-2.5 15-2.5-15h-4l-2.5 15-2.5-15h-4z"
         fill="white"
       />
       
-      {/* TECH */}
+      {/* T */}
       <path
         d="M105 12v4h6v20h4V16h6v-4h-16z"
         fill="white"
